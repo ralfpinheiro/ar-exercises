@@ -9,4 +9,9 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+new_west = Store.create(name: "New West", annual_revenue: 0, mens_apparel: false, womens_apparel: false)
+
+puts new_west.errors.full_messages
+
+
+
