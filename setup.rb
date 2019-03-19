@@ -1,5 +1,6 @@
 require 'pry' # in case you want to use binding.pry
 require 'active_record'
+require 'pg'
 require_relative 'lib/store'
 require_relative 'lib/employee'
 
@@ -40,5 +41,7 @@ ActiveRecord::Schema.define do
     table.timestamps null: false
   end
 end
+
+
 
 puts 'Setup DONE'
