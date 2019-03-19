@@ -6,7 +6,7 @@ class Store < ActiveRecord::Base
 
     def apparel_type
         unless mens_apparel.present? || womens_apparel.present?
-            errors.add("mens_apparel or womens_apparel", "can't be false")
+            errors.add("mens_apparel and womens_apparel", "can't be both false")
         end  
     end
 end
